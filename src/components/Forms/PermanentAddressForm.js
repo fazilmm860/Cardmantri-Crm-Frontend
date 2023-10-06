@@ -15,7 +15,7 @@ function PermanentAddressForm({ formData, setFormData }) {
         <div className="sm:col-span-4">
 
             <label htmlFor="residenceAddress" className="block text-sm font-medium leading-6 text-gray-900">
-                Permanent Address
+                Permanent Address <span style={{color:'red'}}>*</span>
             </label>
             <div className="mt-2">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">

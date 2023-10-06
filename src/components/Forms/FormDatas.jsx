@@ -535,7 +535,7 @@ const handleSubmit=async (event)=>{
            
             <div className="sm:col-span-4">
               <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
-                Executive Name
+                Executive Name <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -551,11 +551,12 @@ const handleSubmit=async (event)=>{
                     required
                   />
                 </div>
+                
               </div>
             </div>
             <div className="sm:col-span-4">
               <label htmlFor="code" className="block text-sm font-medium leading-6 text-gray-900">
-              DSE-Code
+              DSE-Code <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -576,7 +577,7 @@ const handleSubmit=async (event)=>{
 
             <div className="sm:col-span-3">
               <label htmlFor="selectcard" className="block text-sm font-medium leading-6 text-gray-900">
-                Select Card
+                Select Card <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
                
@@ -602,7 +603,7 @@ const handleSubmit=async (event)=>{
 
             <div className="sm:col-span-3">
               <label htmlFor="surrogate" className="block text-sm font-medium leading-6 text-gray-900">
-                Surrogate
+                Surrogate <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
                
@@ -629,7 +630,7 @@ const handleSubmit=async (event)=>{
             <div className="sm:col-span-4">
             <h2 className="text-base font-semibold leading-7 text-gray-900">APPLICANT DETAILS</h2>
               <label  className="block text-sm font-medium leading-6 text-gray-900">
-                Customer Name(as per pan)
+                Customer Name(as per pan) <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -685,7 +686,7 @@ const handleSubmit=async (event)=>{
             </div>
             <div className="sm:col-span-4">
               <label htmlFor="dateOfBirth" className="block text-sm font-medium leading-6 text-gray-900">
-               Date of Birth
+               Date of Birth <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
                 <input
@@ -702,7 +703,7 @@ const handleSubmit=async (event)=>{
             
             <div className="sm:col-span-4">
             <label htmlFor="gender" className="block text-sm font-medium leading-6 text-gray-900">
-               Gender
+               Gender <span style={{color:'red'}}>*</span>
               </label>
                 <div className="flex items-center gap-x-3">
                   <input
@@ -752,7 +753,7 @@ const handleSubmit=async (event)=>{
 
             <div className="sm:col-span-3">
               <label htmlFor="maritalStatus" className="block text-sm font-medium leading-6 text-gray-900">
-                Marital Status
+                Marital Status <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
               
@@ -797,7 +798,7 @@ const handleSubmit=async (event)=>{
 
             <div className="sm:col-span-3">
               <label htmlFor="qualification" className="block text-sm font-medium leading-6 text-gray-900">
-               Qualification
+               Qualification <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
               
@@ -842,7 +843,7 @@ const handleSubmit=async (event)=>{
             </div>
             <div className="sm:col-span-4">
               <label htmlFor="panNumber" className="block text-sm font-medium leading-6 text-gray-900">
-              Pan Number
+              Pan Number <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -862,7 +863,7 @@ const handleSubmit=async (event)=>{
 
             <div className="sm:col-span-4">
                       <label htmlFor="mobileNumber" className="block text-sm font-medium leading-6 text-gray-900">
-                      Mobile Number
+                      Mobile Number <span style={{color:'red'}}>*</span>
                       </label>
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -905,7 +906,7 @@ const handleSubmit=async (event)=>{
 
                   <div className="sm:col-span-4"> 
                       <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                      Email ID
+                      Email ID <span style={{color:'red'}}>*</span>
                       </label>
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -955,7 +956,7 @@ const handleSubmit=async (event)=>{
                 )}
                   <div className="sm:col-span-4">
               <label htmlFor="periodResidence" className="block text-sm font-medium leading-6 text-gray-900">
-               Period at current Residence
+               Period at current Residence <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -979,7 +980,7 @@ const handleSubmit=async (event)=>{
 
             <div className="sm:col-span-3">
               <label htmlFor="residenceIs" className="block text-sm font-medium leading-6 text-gray-900">
-                Your Residence is
+                Your Residence is <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
                
@@ -1007,7 +1008,7 @@ const handleSubmit=async (event)=>{
             <div className="sm:col-span-4">
                     <h2 className="text-base font-semibold py-3 leading-7 text-gray-900">COMPANY DETAILS</h2>
                     <label htmlFor="companyName" className="block text-sm font-medium leading-6 text-gray-900">
-                       Company Name
+                       Company Name <span style={{color:'red'}}>*</span>
                     </label>
                     <div className="mt-2">
                       <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -1026,7 +1027,7 @@ const handleSubmit=async (event)=>{
                       </div>
                     </div>
                       <label htmlFor="flat" className="block text-sm font-medium leading-6 text-gray-900">
-                      Company Address
+                      Company Address <span style={{color:'red'}}>*</span>
                       </label>
                       <div className="mt-2">
                         <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -1133,7 +1134,7 @@ const handleSubmit=async (event)=>{
             
             <div className="sm:col-span-4">
               <label htmlFor="designation" className="block text-sm font-medium leading-6 text-gray-900">
-                Designation
+                Designation <span style={{color:'red'}}>*</span>
               </label>
               <div className="mt-2">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -1198,7 +1199,7 @@ const handleSubmit=async (event)=>{
             </div>
 
             <div className="sm:col-span-4">
-              <h2 className="text-2xl font-semibold mb-4">Occupation Type</h2>
+              <h2 className="text-2xl font-semibold mb-4">Occupation Type <span style={{color:'red'}}>*</span></h2>
               <div className="mb-4">
                 <label htmlFor="Salaried" className='flex items-center mb-2'>
                   <input
