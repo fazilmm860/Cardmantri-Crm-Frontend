@@ -30,7 +30,7 @@ function App() {
   const DashboardValid = async () => {
     let token = localStorage.getItem("userdatatoken");
 
-    const res = await fetch("/api/validuser", {
+    const res = await fetch("http://localhost:8000/api/validuser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
