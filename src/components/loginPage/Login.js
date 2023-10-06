@@ -81,61 +81,59 @@ const Login = () => {
 
     return (
         <>
-            <div className="flex justify-center items-center h-screen">
+<div className='flex flex-col justify-center items-center bg-dark dark:bg-neutral-900 min-h-screen'>
 
-                <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full sm:max-w-md">
+<form className="bg-white dark:bg-neutral-800 shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-full sm:max-w-md">
 
-                    <div className="mb-4">
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                            Email
-                        </label>
-                        <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="email"
-                            type="email"
-                            placeholder="Email"
-                            name="email"
-                            value={inpval.email}
-                            onChange={setVal}
+    <div className="mb-4">
+        <label className="block text-gray-700 dark:text-white text-sm font-bold mb-2" htmlFor="email">
+            Email
+        </label>
+        <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-white bg-gray-100 dark:bg-neutral-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="email"
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={inpval.email}
+            onChange={setVal}
+        />
+    </div>
+    <div className="mb-4">
+        <label className="block text-gray-700 dark:text-white text-sm font-bold mb-2" htmlFor="password">
+            Password
+        </label>
+        <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-white bg-gray-100 dark:bg-neutral-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="password"
+            type={!passShow ? "password" : "text"}
+            placeholder="Password"
+            name="password"
+            value={inpval.password}
+            onChange={setVal}
+        />
+        <div className="showpass" style={{color:'white'}} onClick={() => setPassShow(!passShow)}>
+            {!passShow ? "Show" : "Hide"}
+        </div>
+    </div>
+
+    <div className="flex items-center justify-center">
+        <button
+            className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+            onClick={loginuser}
+        >
+            Sign Up
+        </button>
+    </div>
+
+    <p style={{ color: "white", padding:"10px", fontWeight: "bold" }}>Forgot Password  <NavLink to="/password-reset">Click Here</NavLink> </p>
+
+</form>
+<ToastContainer />
+</div>
 
 
-                        />
-                    </div>
-                    <div className="mb-4">
-                        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-                            Password
-                        </label>
-                        <input
-                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="password"
-                            type={!passShow ? "password" : "text"}
-                            placeholder="Password"
-                            name="password"
-                            value={inpval.password}
-                            onChange={setVal}
-
-                        />
-                        <div className="showpass" onClick={() => setPassShow(!passShow)}>
-                            {!passShow ? "Show" : "Hide"}
-                        </div>
-                    </div>
-
-                    <div className="flex items-center justify-center">
-                        <button
-                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                            type="submit"
-                            onClick={loginuser}
-                        >
-                            Sign Up
-                        </button>
-                    </div>
-
-
-                    <p style={{ color: "black", fontWeight: "bold" }}>Forgot Password  <NavLink to="/password-reset">Click Here</NavLink> </p>
-
-                </form>
-                <ToastContainer />
-            </div >
         </>
     )
 }
