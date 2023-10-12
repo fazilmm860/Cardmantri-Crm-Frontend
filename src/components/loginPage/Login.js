@@ -112,7 +112,7 @@ const Login = () => {
             value={inpval.password}
             onChange={setVal}
         />
-        <div className="showpass" style={{color:'white'}} onClick={() => setPassShow(!passShow)}>
+        <div className="showpass" style={{color:'black'}} onClick={() => setPassShow(!passShow)}>
             {!passShow ? "Show" : "Hide"}
         </div>
     </div>
@@ -127,7 +127,7 @@ const Login = () => {
         </button>
     </div>
 
-    <p style={{ color: "white", padding:"10px", fontWeight: "bold" }}>Forgot Password  <NavLink to="/password-reset">Click Here</NavLink> </p>
+    <p style={{ color: "black", padding:"10px", fontWeight: "bold" }}>Forgot Password  <NavLink to="/password-reset">Click Here</NavLink> </p>
 
 </form>
 <ToastContainer />
