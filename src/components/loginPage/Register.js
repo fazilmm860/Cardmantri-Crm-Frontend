@@ -85,9 +85,9 @@ const Register = () => {
         <div className="flex justify-center items-center h-screen">
             <div className="form_heading">
                 <h1>Sign Up</h1>
-                <p style={{ textAlign: "center" }}>We are glad that you will be using these credentials for  <br />accessing the  admin pages.</p>
+                <p style={{ textAlign: "center", color:'whitesmoke'}}>We are glad that you will be using these credentials to  <br />accessing the  admin pages.</p>
             </div >
-            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full sm:max-w-md">
+            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mr-3 w-full sm:max-w-md">
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                         Name
